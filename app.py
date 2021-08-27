@@ -87,17 +87,29 @@ with st.container():
             fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 11:
             fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
     elif select == 2020:
         if select1 == 1:
             fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])

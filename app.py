@@ -2500,881 +2500,1264 @@ with st.container():
 
     elif select == 1999:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
 
     elif select == 1998:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
 
     elif select == 1997:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
 
     elif select == 1996:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
 
     elif select == 1995:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
-
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
+                
     elif select == 1994:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
 
     elif select == 1993:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
 
     elif select == 1992:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
-                          width = 1200, height = 575, markers = True)
-            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
-            fig.update_layout(xaxis_title='Date',
-                  yaxis_title='Close', plot_bgcolor="white")
-            fig.update_traces(textposition="bottom right")
-            st.plotly_chart(fig, use_container_width=False)
-
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()

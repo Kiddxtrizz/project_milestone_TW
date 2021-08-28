@@ -59,1090 +59,3322 @@ with st.container():
     col2.metric("Low", results_df['low'][0], round((results_df['low'][1] - results_df['low'][0])/100,2))
     col3.metric("Open", results_df['Open'][0], round((results_df['Open'][1] - results_df['Open'][0])/100,2))
     col4.metric("Close", results_df['close'][0], round((results_df['close'][1] - results_df['close'][0])/100,2))
-
+    st.markdown("*Current Stats as of {}*".format(pd.to_datetime(results_df['Date'][0]).date()))
 
     if select == 2021:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
             try:
-                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
                 st.plotly_chart(fig, use_container_width=False)
             except:
                 st.warning('This data does not exist yet. Please use the current or past month(s)')
                 st.stop()
         if select1 == 10:
             try:
-                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
                 st.plotly_chart(fig, use_container_width=False)
             except:
                 st.warning('This data does not exist yet. Please use the current or past month(s)')
                 st.stop()
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
-            st.plotly_chart(fig, use_container_width=False)
-        if select1 == 12:
             try:
-                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
                 st.plotly_chart(fig, use_container_width=False)
             except:
                 st.warning('This data does not exist yet. Please use the current or past month(s)')
                 st.stop()
+        if select1 == 12:
+            try:
+                fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                              width = 1200, height = 575, markers = True)
+                fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+                fig.update_layout(xaxis_title='Date',
+                      yaxis_title='Close', plot_bgcolor="white")
+                fig.update_traces(textposition="bottom right")
+                st.plotly_chart(fig, use_container_width=False)
+            except:
+                st.warning('This data does not exist yet. Please use the current or past month(s)')
+                st.stop()
+
     elif select == 2020:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2019:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2018:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
+
     elif select == 2017:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2016:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2015:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2014:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2013:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2012:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2011:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2010:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2009:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2008:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2007:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2006:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2005:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2004:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2003:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2002:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 2001:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
+    elif select == 2000:
+        if select1 == 1:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+        if select1 == 2:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+        if select1 == 3:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+        if select1 == 4:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+        if select1 == 5:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+        if select1 == 6:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+        if select1 == 7:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+        if select1 == 8:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+        if select1 == 9:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+        if select1 == 10:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+        if select1 == 11:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+        if select1 == 12:
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
+            st.plotly_chart(fig, use_container_width=False)
+
     elif select == 1999:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 1998:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 1997:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 1996:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 1995:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 1994:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 1993:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+
     elif select == 1992:
         if select1 == 1:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 1], y=yr_data.close[yr_data.Month == 1], text = yr_data.close[yr_data.Month == 1],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 2:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 2], y=yr_data.close[yr_data.Month == 2], text = yr_data.close[yr_data.Month == 2],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 3:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 3], y=yr_data.close[yr_data.Month == 3], text = yr_data.close[yr_data.Month == 3],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 4:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 4], y=yr_data.close[yr_data.Month == 4], text = yr_data.close[yr_data.Month == 4],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 5:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 5], y=yr_data.close[yr_data.Month == 5], text = yr_data.close[yr_data.Month == 5],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 6:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 6], y=yr_data.close[yr_data.Month == 6], text = yr_data.close[yr_data.Month == 6],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 7:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 7], y=yr_data.close[yr_data.Month == 7], text = yr_data.close[yr_data.Month == 7],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 8:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 8], y=yr_data.close[yr_data.Month == 8], text = yr_data.close[yr_data.Month == 8],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 9:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 9], y=yr_data.close[yr_data.Month == 9], text = yr_data.close[yr_data.Month == 9],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 10:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 10], y=yr_data.close[yr_data.Month == 10], text = yr_data.close[yr_data.Month == 10],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 11:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 11], y=yr_data.close[yr_data.Month == 11], text = yr_data.close[yr_data.Month == 11],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
         if select1 == 12:
-            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12])
+            fig = px.line(yr_data, x= yr_data.Date[yr_data.Month == 12], y=yr_data.close[yr_data.Month == 12], text = yr_data.close[yr_data.Month == 12],
+                          width = 1200, height = 575, markers = True)
+            fig.update_xaxes(showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_yaxes(tickprefix="$", showline=True, linewidth=2, linecolor='black', showgrid=False)
+            fig.update_layout(xaxis_title='Date',
+                  yaxis_title='Close', plot_bgcolor="white")
+            fig.update_traces(textposition="bottom right")
             st.plotly_chart(fig, use_container_width=False)
+

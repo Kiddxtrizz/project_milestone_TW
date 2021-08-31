@@ -7,15 +7,16 @@ import requests
 
 
 st.set_page_config(
+    page_title = "My First Web App XD",
     page_icon = "random",
-    layout = "wide"
+    layout = "wide",
+    initial_sidebar_state = "expanded"
 )
-
-
 
 base_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=IBM&apikey=235NZQZTP0UKSBEQ'
 new_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol={}&apikey=235NZQZTP0UKSBEQ'
 
+@st.cache
 def get_data(url):
     r = requests.get(url)
     data = r.json()

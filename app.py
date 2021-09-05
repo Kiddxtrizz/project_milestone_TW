@@ -13,26 +13,36 @@ st.set_page_config(
     initial_sidebar_state = "expanded"
 )
 
-base_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=IBM&apikey=235NZQZTP0UKSBEQ'
-new_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol={}&apikey=235NZQZTP0UKSBEQ'
+base_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&outputsize=full&apikey=235NZQZTP0UKSBEQ'
+new_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={}&outputsize=full&apikey=235NZQZTP0UKSBEQ'
 
 @st.cache
 def get_data(url):
     r = requests.get(url)
     data = r.json()
-    df = pd.DataFrame.from_dict(data['Weekly Time Series'], orient='index')
-    df.columns = ['Open', 'High', 'low', 'close', 'volume']
-    df['Date'] = df.index
-    df = df.reset_index()
+    
+    # transform json data in dict to a pandas dataframe
+    # store result in new object 
+    df =  pd.DataFrame.from_dict(x['Time Series (Daily)'], orient='index')
+    # update column names 
+    df.columns = ['Open', 'High', 'low', 'close', 'adjusted close','volume','dividend amount', 'split coefficient' ]
+    # create new column for date
     df['Date'] = pd.to_datetime(df['Date'])
+    # create a new column for year
     df['Year'] =  pd.DatetimeIndex(df['Date']).year
+    # create a new column for month
     df['Month'] =  pd.DatetimeIndex(df['Date']).month
+    
+    # update data types to allow for plotting 
     df['volume'] = df['volume'].apply(int)
     df['Open'] = df['Open'].apply(float)
     df['High'] = df['High'].apply(float)
     df['low'] = df['low'].apply(float)
     df['close'] = df['close'].apply(float)
-    return df
+    df['adjusted close'] = df['adjusted close'].apply(float)
+    
+    # return the final product
+    return df 
 
 st.title("Milestone Project: My Stock Ticker")
 st.markdown("**Created By: Trey W.**")

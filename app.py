@@ -17,8 +17,6 @@ st.set_page_config(
 base_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&outputsize=full&apikey=235NZQZTP0UKSBEQ'
 new_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={}&outputsize=full&apikey=235NZQZTP0UKSBEQ'
 
-caching.clear_cache()
-
 @st.cache(ttl=60*5, max_entries=20) 
 def get_data(url):
     r = requests.get(url)

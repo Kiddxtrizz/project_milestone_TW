@@ -55,7 +55,8 @@ Create a Streamlit app on Heroku that accepts a stock ticker input from the user
 5. Review [Plotly Documentation](https://plotly.com/python/getting-started/)
 
 ## Featured Notebooks/Analysis/Deliverables
-* [app script](https://github.com/Kiddxtrizz/project_milestone_TW/blob/main/app.py)
+* [Application Script](https://github.com/Kiddxtrizz/project_milestone_TW/blob/main/app.py)
+* [Application ink](https://treyw-dataincubator-project.herokuapp.com/)
 
 
 

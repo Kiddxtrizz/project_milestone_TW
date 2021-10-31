@@ -61,7 +61,7 @@ Create a Streamlit app on Heroku that accepts a stock ticker input from the user
 
 ## Contributing Members
 
-**Team Leads (Contacts) : [Trey W.](https://github.com/Kiddxtrizz)(@slackHandle)**
+**Team Leads (Contacts) : [Trey W.](https://github.com/Kiddxtrizz)(@Williams.Treyj@gmail.com)**
 
 
 ## Contact

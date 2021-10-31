@@ -24,7 +24,7 @@ Recently, however, libraries like Streamlit have made it possible to build simpl
 
 ### Technologies
 * Python
-* Git
+* Bash
 * PostGres
 * Pandas, jupyter, requests, json, datetime
 * Heroku

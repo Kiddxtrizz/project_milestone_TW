@@ -1,5 +1,5 @@
 # Milestone Project
-This project is a part of the [The Data Incubator](https://www.thedataincubator.com/) milestone project day 10 of 12 challenge. 
+This project is a part of the [The Data Incubator](https://www.thedataincubator.com/) 12-Day bootcamp. 
 
 #### -- Project Status: [Completed]
 

@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import requests
 from streamlit import caching
-
+from dotenv import load_dotenv
 
 st.set_page_config(
     page_title = "My First Web App XD",
@@ -14,8 +14,8 @@ st.set_page_config(
     initial_sidebar_state = "expanded"
 )
 
-base_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&outputsize=full&apikey=235NZQZTP0UKSBEQ'
-new_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={}&outputsize=full&apikey=235NZQZTP0UKSBEQ'
+base_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&outputsize=full&apikey=API_KEY'
+new_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={}&outputsize=full&apikey=API_KEY'
 
 @st.cache(ttl=60*5, max_entries=20) 
 def get_data(url):

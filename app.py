@@ -173,24 +173,24 @@ else:
 
     #     fig = px.line(temp_df, x=temp_df.index, y='2. high')
     #     fig.update_xaxes(rangeslider_visible=True)
-        tmp_open = round(int(float(quote['Global Quote']['02. open'])),2)
-        tmp_high = round(int(float(quote['Global Quote']['03. high'])),2)
-        tmp_low = round(int(float(quote['Global Quote']['04. low'])),2)
-        tmp_price = round(int(float(quote['Global Quote']['05. price'])),2)
-        tmp_vol = quote['Global Quote']['06. volume']
-        tmp_prev_cls = round(int(float(quote['Global Quote']['08. previous close'])),2)
-        tmp_change = quote['Global Quote']['09. change']
-        tmp_chngpct = quote['Global Quote']['10. change percent']
-        tmp_lst_trd_day = quote['Global Quote']['07. latest trading day']
+            tmp_open = round(int(float(quote['Global Quote']['02. open'])),2)
+            tmp_high = round(int(float(quote['Global Quote']['03. high'])),2)
+            tmp_low = round(int(float(quote['Global Quote']['04. low'])),2)
+            tmp_price = round(int(float(quote['Global Quote']['05. price'])),2)
+            tmp_vol = quote['Global Quote']['06. volume']
+            tmp_prev_cls = round(int(float(quote['Global Quote']['08. previous close'])),2)
+            tmp_change = quote['Global Quote']['09. change']
+            tmp_chngpct = quote['Global Quote']['10. change percent']
+            tmp_lst_trd_day = quote['Global Quote']['07. latest trading day']
 
-        c1, c2, c3, c4, c5, c6 = st.columns(6)
+            c1, c2, c3, c4, c5, c6 = st.columns(6)
 
-        c1.metric("Price", tmp_price)
-        c2.metric("Open", tmp_open)
-        c3.metric("High", tmp_high)
-        c4.metric("Low", tmp_low)
-        c5.metric("Volume", tmp_vol)
-        c6.metric("Previous Close", tmp_prev_cls, tmp_change)
+            c1.metric("Price", tmp_price)
+            c2.metric("Open", tmp_open)
+            c3.metric("High", tmp_high)
+            c4.metric("Low", tmp_low)
+            c5.metric("Volume", tmp_vol)
+            c6.metric("Previous Close", tmp_prev_cls, tmp_change)
         
 
         

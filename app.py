@@ -10,7 +10,7 @@ import os
 load_dotenv()
 API_KEY = os.getenv('API_KEY')
 
-BASE_URL = 'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=IBM&apikey={}'.format(API_KEY)
+BASE_URL = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey={}'.format(API_KEY)
 
 
 
@@ -49,21 +49,33 @@ if search == '':
     with c2:
         st.write('Current Symbol: {}'.format(symbl))
         
-    df = pd.DataFrame.from_dict(data['Weekly Time Series'],orient='index')
+    df = pd.DataFrame.from_dict(data['Time Series (Daily)'],orient='index')
+    df = df.sort_index()
     
     df['date'] = pd.to_datetime(df.index)
     df[['Year', 'Week', 'Day']] = df['date'].dt.isocalendar()
+    df['Month'] = df['date'].dt.month
+    df['Month Name'] = df['date'].dt.month_name()
     
     st.sidebar.markdown('### Filter Shelf')
     
-    Year = st.sidebar.selectbox("Year filter", df['Year'].unique()) 
+    Year = st.sidebar.selectbox("Year filter", df['Year'].unique())
+    Month = st.sidebar.selectbox("Month filter", df['Month Name'].unique())
     
-    temp_df = df[df['Year'] == Year]
+    temp_df = df[(df['Year'] == Year) & (df['Month Name'] == Month)]
+    temp_df['2. high'] = temp_df['2. high'].astype(float)
+    temp_df['5. volume'] = temp_df['5. volume'].astype(float)
     
-    fig = px.line(temp_df, x=temp_df.index, y='1. open')
+    fig = px.line(temp_df, x=temp_df.index, y='2. high')
+    fig.update_xaxes(rangeslider_visible=True)
+
     st.plotly_chart(fig)
+
+    fig1 = px.bar(temp_df, x=temp_df.index, y='5. volume')
+    st.plotly_chart(fig1)
+    
 else:
-    url = 'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol={}&apikey={}'.format(search,API_KEY)
+    url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={}&apikey={}'.format(search,API_KEY)
     r = requests.get(url)
     
     data = r.json()
@@ -81,19 +93,35 @@ else:
             st.write('Current Symbol: {}'.format(symbl))
         
         
-        df = pd.DataFrame.from_dict(data['Weekly Time Series'],orient='index')
+        df = pd.DataFrame.from_dict(data['Time Series (Daily)'],orient='index')
+        df = df.sort_index()
 
         df['date'] = pd.to_datetime(df.index)
         df[['Year', 'Week', 'Day']] = df['date'].dt.isocalendar()
+        df['Month'] = df['date'].dt.month
+        
+        st.write
 
         st.sidebar.markdown('### Filter Shelf')
 
         Year = st.sidebar.selectbox("Year filter", df['Year'].unique()) 
+        Month = st.sidebar.selectbox("Month filter", df['Month'].unique())
 
-        temp_df = df[df['Year'] == Year]
+        temp_df = df[(df['Year'] == Year)]
 
-        fig = px.line(temp_df, x=temp_df.index, y='1. open')
+        st.write(temp_df)
+        
+        
+        fig = px.line(temp_df, x=temp_df.index, y='2. high')
+        fig.update_xaxes(
+            dtick="M1",
+            tickformat="%b\n%Y",
+            ticklabelmode="period")
         st.plotly_chart(fig)
+        
+        fig1 = px.bar(temp_df, x=temp_df.index, y='5. volume')
+        st.plotly_chart(fig1)
+        
     except (KeyError,NameError):
         st.error("Symbol does not exisit")
         
